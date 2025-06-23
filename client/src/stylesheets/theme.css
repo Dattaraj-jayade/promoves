@@ -1,0 +1,47 @@
+:root {
+  --colour-primary: #002e2a;
+  --colour-secondary: #b7c408;
+}
+.bg-primary {
+  background-color: var(--colour-primary);
+}
+.bg-secondary {
+  background-color: var(--colour-secondary);
+}
+.bg-error {
+  background-color: #ee0000;
+}
+.bg-warning {
+  background-color: #008b45;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-black {
+  background-color: black;
+}
+.text-primary {
+  color: var(--colour-primary) !important;
+}
+.text-secondary {
+  color: var(--colour-secondary);
+}
+.text-black {
+  color: #000;
+}
+.text-white {
+  color: #fff;
+}
+.border-primary {
+  border-color: var(--colour-primary);
+}
+.border-secondary {
+  border-color: var(--colour-secondary);
+}
+.content,
+body {
+  background-image: url("D:\promoves\rim\register.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
