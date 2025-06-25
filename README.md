@@ -84,7 +84,7 @@ Start the client:
 npm run dev
 Client will run on http://localhost:5173 (Vite default)
 ```
-## 🔗 API Communication
+🔗 API Communication
 To enable React to talk to Express:
 
 In vite.config.js (client side), add prox
@@ -97,7 +97,7 @@ server: {
 ```
 Or directly use full URLs like http://localhost:5000/api/users.
 
-## 🧩 Tech Stack
+🧩 Tech Stack
 🔹 Frontend:
     React
     Vite
@@ -110,7 +110,7 @@ Or directly use full URLs like http://localhost:5000/api/users.
     MongoDB with Mongoose
     JWT for authentication
 
-## 📦 Scripts
+📦 Scripts
   Backend
 
  ```
@@ -120,7 +120,7 @@ Frontend
 ```
 npm run dev       # Starts Vite development server
 ```
-## 📁 Notable Files
+📁 Notable Files
 Client:
 App.jsx – Root app logic and routing
 
@@ -137,7 +137,7 @@ models/ – Database schemas
 
 controllers/ – Logic for route handling
 
-## ✅ TODO
+✅ TODO
  Add Login / Signup flow
 
  User roles (admin, guest)
