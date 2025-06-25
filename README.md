@@ -12,7 +12,7 @@ ProMoves is a full-stack MERN (MongoDB, Express, React, Node.js) application des
     - [1. Clone the Repository](#1-clone-the-repository)
     - [2. Backend Setup](#2-backend-setup)
     - [3. Frontend Setup](#3-frontend-setup)
-  - [API Communication](#api-communication)
+  - [API Communication](#api-communication-)
   - [Tech Stack](#tech-stack)
   - [Scripts](#scripts)
   - [Notable Files](#notable-files)
