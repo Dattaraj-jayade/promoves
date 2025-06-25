@@ -7,21 +7,21 @@ ProMoves is a full-stack MERN (MongoDB, Express, React, Node.js) application des
 
 ## 📚 Table of Contents
 
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-  - [1. Clone the Repository](#1-clone-the-repository)
-  - [2. Backend Setup](#2-backend-setup)
-  - [3. Frontend Setup](#3-frontend-setup)
-- [API Communication](#api-communication)
-- [Tech Stack](#tech-stack)
-- [Scripts](#scripts)
-- [Notable Files](#notable-files)
-- [TODO](#todo)
+  - [ Project Structure](#project-structure)
+  - [Getting Started](#getting-started)
+    - [1. Clone the Repository](#1-clone-the-repository)
+    - [2. Backend Setup](#2-backend-setup)
+    - [3. Frontend Setup](#3-frontend-setup)
+  - [API Communication](#api-communication)
+  - [Tech Stack](#tech-stack)
+  - [Scripts](#scripts)
+  - [Notable Files](#notable-files)
+  - [TODO](#todo)
 
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure 🗂️
 ```
 
 promoves/
@@ -50,7 +50,7 @@ promoves/
 ```
 ---
 
-## ⚙️ Getting Started
+## Getting Started ⚙️
 
 ### 1. Clone the Repository
 
@@ -63,7 +63,7 @@ cd promovess
    cd server
    npm install
 ```
-➕ Create .env file inside /server:
+ Create .env file inside /server: ➕
 ```
     PORT=5000
     MONGO_URI=mongodb://localhost:27017/promoves
@@ -84,10 +84,11 @@ Start the client:
 npm run dev
 Client will run on http://localhost:5173 (Vite default)
 ```
-🔗 API Communication
+## API Communication 🔗
 To enable React to talk to Express:
 
-In vite.config.js (client side), add prox
+Option 1: Use Vite Proxy
+In client/vite.config.js, add:
 ```
 server: {
   proxy: {
@@ -95,9 +96,13 @@ server: {
   },
 }
 ```
+Option 2: Use full URL in API calls
+```
+axios.get('http://localhost:5000/api/route')
+```
 Or directly use full URLs like http://localhost:5000/api/users.
 
-🧩 Tech Stack
+## Tech Stack 🧩
 🔹 Frontend:
     React
     Vite
@@ -110,7 +115,7 @@ Or directly use full URLs like http://localhost:5000/api/users.
     MongoDB with Mongoose
     JWT for authentication
 
-📦 Scripts
+## Scripts 📦
   Backend
 
  ```
@@ -120,7 +125,7 @@ Frontend
 ```
 npm run dev       # Starts Vite development server
 ```
-📁 Notable Files
+## Notable Files 📁
 Client:
 App.jsx – Root app logic and routing
 
@@ -137,7 +142,7 @@ models/ – Database schemas
 
 controllers/ – Logic for route handling
 
-✅ TODO
+## ✅ TODO
  Add Login / Signup flow
 
  User roles (admin, guest)
